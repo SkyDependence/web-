@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 设置全局样式 */
+        body {
+          margin: 0;
+          /*max-width: 960px; 设置一个最大宽度，以免页面过宽*/
+          padding: 0;
+          font-family: Arial, sans-serif;
+          font-size: 14px;
+          line-height: 1.5;
+          color: #333;
+          text-align: center;
+        }
+    
+        /* 设置表格样式 */
+        table {
+          margin: 0 auto;
+          width: 100%;
+          border-collapse: collapse;
+          border-spacing: 0;
+          table-layout: fixed;
+        }
+    
+        th,
+        td {
+          padding: 10px;
+          text-align: left;
+          vertical-align: top;
+          font-weight: bold;
+        }
+    
+        th {
+          font-size: 20px;
+          color: #c00;
+          font-weight: bold;
+          padding-bottom: 20px;
+        }
+    
+        /* 设置图片样式 */
+        img {
+          max-width: 100%;
+          height: auto;
+        }
+    
+        /* 设置分页样式 */
+        .pagination {
+          text-align: center;
+          margin-top: 20px;
+          margin-bottom: 20px;
+        }
+    
+        .pagination a {
+          display: inline-block;
+          padding: 5px 10px;
+          background-color: #eee;
+          border-radius: 3px;
+          color: #333;
+          text-decoration: none;
+          margin-right: 10px;
+        }
+    
+        .pagination a.active {
+          background-color: #c00;
+          color: #fff;
+        }
+        .pagination .page-link.active {
+            background-color: #ff0000;
+            border-color: #ff0000;
+            color: #fff;
+        }
+      </style>
+</head>
+<body>
+        <table>
+            <tbody>
+              <!-- 第一页 -->
+              <tr>
+                <td colspan="4"><img src="../实验素材2023/images/bj2.jpg" alt="共和国勋章"></td>
+              </tr>
+              <tr>
+                <td colspan="4"><h1 style="color:#c00;">“共和国勋章”获得者</h1></td>
+              </tr>
+              <tr>
+                <td><img src="../实验素材2023/images/c4-1.jpg" alt="获得者1"><br>钟南山：临危受命，国士担当</td>
+                <td><img src="../实验素材2023/images/c4-2.jpg" alt="获得者2"><br>于敏：为国防建设隐姓埋名28载</td>
+                <td><img src="../实验素材2023/images/c4-3.jpg" alt="获得者3"><br>申纪兰：“勿忘人民，勿忘劳动”</td>
+                <td><img src="../实验素材2023/images/c4-4.jpg" alt="获得者4"><br>“两弹一星”元勋：孙家栋</td>
+            </tr>
+            <tr>
+                <td><img src="../实验素材2023/images/c4-5.jpg" alt="获得者5"><br>李延年：荣誉属于所有烈士</td>
+                <td><img src="../实验素材2023/images/c4-6.jpg" alt="获得者6"><br>张富清：“战斗英雄”</td>
+                <td><img src="../实验素材2023/images/c4-7.jpg" alt="获得者7"><br>袁隆平：杂交水稻之父</td>
+                <td><img src="../实验素材2023/images/c4-8.jpg" alt="获得者8"><br>黄旭华：我的一生属于核潜艇属于祖国</td>
+            </tr>
+            </tbody>
+        </table>
+                <div class="pagination">
+                    <a class="page-link active" href="#" id="first-page">1</a>
+                    <a class="page-link" href="#" id="prev-page">2</a>
+                    <a class="page-link" href="#" id="next-page">下一页</a>
+                    <a class="page-link" href="#" id="last-page">尾页</a>
+                  </div>
+</body>
+</html>
