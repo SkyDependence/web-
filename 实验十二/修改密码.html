@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>密码修改</title>
+	<meta charset="UTF-8">
+	<script>
+		function submitForm() {
+			var oldPassword = document.getElementById("oldPassword").value;
+			var newPassword = document.getElementById("newPassword").value;
+			var confirmNewPassword = document.getElementById("confirmNewPassword").value;
+
+			if (newPassword === "") {
+				alert("新密码不能为空！");
+				return;
+			}
+
+			if (oldPassword === newPassword) {
+				alert("新密码不能与旧密码相同！");
+				return;
+			}
+
+			if (newPassword !== confirmNewPassword) {
+				alert("两次输入的新密码不一致！");
+				return;
+			}
+
+			alert("密码修改成功！");
+		}
+	</script>
+</head>
+<body>
+	<table border="1">
+		<caption>用户密码修改</caption>
+		<tr>
+			<td><label for="oldPassword">旧密码：</label></td>
+			<td><input type="password" id="oldPassword" name="oldPassword"></td>
+		</tr>
+		<tr>
+			<td><label for="newPassword">新密码：</label></td>
+			<td><input type="password" id="newPassword" name="newPassword"></td>
+		</tr>
+		<tr>
+			<td><label for="confirmNewPassword">确认新密码：</label></td>
+			<td><input type="password" id="confirmNewPassword" name="confirmNewPassword"></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><input type="button" value="提交" onclick="submitForm()"><input type="button" value="重置" onclick="resetForm()"></td>
+		</tr>
+	</table>
+</body>
+</html>
+

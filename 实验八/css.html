@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Div + CSS 网页布局</title>
+    <style>
+        /* 全局样式 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* 头部样式 */
+        #header {
+            height: 60px;
+            background-color: #ffe8bc;
+            color: rgb(0, 0, 0);
+            font-size: 12px;
+            text-align: left;
+            margin-bottom: 6px;
+        }
+
+        /*导航*/
+        #direction {
+            height: 30px;
+            background-color: #c6ffa8;
+            color: rgb(0, 0, 0);
+            font-size: 12px;
+            text-align: left;
+            margin-bottom: 6px;
+        }
+
+        /* 内容区样式 */
+        #content {
+            display: flex;
+            justify-content: space-between;
+            font-size: 12px;
+        }
+
+        /* 侧边栏样式 */
+        #sidebar {
+            width: 200px;
+            height: 400px;
+            background-color: #66ccff;
+        }
+
+        /* 主要内容样式 */
+        #main {
+            flex-grow: 1;
+            /* 自适应高度 */
+            background-color: rgb(156, 227, 234);
+        }
+
+        /*滚动信息栏*/
+        #fa {
+            height: 20px;
+            background-color: #c6ffa8;
+            color: black;
+            font-size: 12px;
+            text-align: left;
+            margin-bottom: 6px;
+        }
+
+        /* 底部样式 */
+        #footer {
+            height: 40px;
+            background-color: #c6ffa8;
+            color: black;
+            font-size: 12px;
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">这里是头部</div>
+    <div id="direction">导航</div>
+    <div id="content">
+        <div id="sidebar">这里是左侧边栏</div>
+        <div id="main">这里是主要内容区</div>
+        <div id="sidebar">这是右侧边栏</div>
+    </div>
+    <div id="fa">滚动信息栏</div>
+    <div id="footer">这里是底部</div>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>猜价格</title>
+	<meta charset="UTF-8">
+	<script>
+		function guessPrice() {
+			var price = 80;
+			var guess = prompt("请输入商品价格（1-100）：");
+			if (guess == null) {
+				return; // 用户点击了取消按钮
+			}
+			guess = parseInt(guess);
+			if (isNaN(guess) || guess < 1 || guess > 100) {
+				alert("请输入1-100之间的数字！");
+				guessPrice(); // 重新开始猜价格
+			} else if (guess > price) {
+				alert("高了！");
+				guessPrice(); // 继续猜价格
+			} else if (guess < price) {
+				alert("低了！");
+				guessPrice(); // 继续猜价格
+			} else {
+				alert("恭喜你猜中了！");
+			}
+		}
+	</script>
+</head>
+<body onload="guessPrice()">
+</body>
+</html>

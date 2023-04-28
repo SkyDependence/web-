@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>字符串反转并转换成大写</title>
+    <meta charset="UTF-8">
+    <script>
+        function reverseAndUpperCase() {
+            var inputString = prompt("请输入一个字符串：");
+            var reversedString = "";
+            for (var i = inputString.length - 1; i >= 0; i--) {
+                var currentChar = inputString.charAt(i);
+                if (/[a-z]/.test(currentChar)) {
+                    currentChar = currentChar.toUpperCase();
+                }
+                reversedString += currentChar;
+            }
+            document.getElementById("output").innerHTML = reversedString;
+        }
+    </script>
+</head>
+
+<body onload="reverseAndUpperCase()">
+    <div id="output"></div>
+</body>
+
+</html>

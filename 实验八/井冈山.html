@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Web页面布局</title>
+    <style type="text/css">
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            line-height: 1.5;
+            color: #333;
+            background-color: #fff;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #ccc;
+            border: 2px solid black;
+        }
+
+        thead th {
+            border: 2px solid black;
+        }
+
+        /* 设置单数行单元格边框样式和颜色 */
+        tbody tr:nth-child(odd) td {
+            border: 2px solid black;
+        }
+
+        /* 设置双数行单元格边框样式和颜色 */
+        tbody tr:nth-child(even) td {
+            border: 2px solid black;
+        }
+
+        td {
+            padding: 10px;
+            border: 1px solid #ccc;
+            text-align: center;
+        }
+
+        .gray-box {
+            background-color: #ccc;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .gray-box h1 {
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+
+        .gray-box p {
+            margin-bottom: 10px;
+        }
+
+        .gray-box .note {
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <table>
+            <tr>
+                <td colspan="2"><img src="../实验素材2023/images/11-1.jpg" alt="image"></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <div class="gray-box">
+                        <h1>井冈山精神</h1>
+                    </div>
+                </td>
+            <tr>
+                <td>
+                    <div class="gray-box">
+                        <p>井冈山精神是红色革命精神之一<span class="note">[1]</span>，诞生于土地革命时期的井冈山根据地。井冈山精神的内涵可以用五句话来概括：1.坚定不移的革命信念。2.坚持党的绝对领导。3.密切联系人民群众的思想作风。4.一切从实际出发的思想路线。5.艰苦奋斗的作风。</p>
+                        <p>井冈山精神是中国共产党创造的一种革命精神。诞生于土地革命时期的并冈山根据地，故名。江泽民把井冈山精神概括为“坚定信念、艰苦奋斗、实事求是、敢闯新路、依靠群众、勇于胜利”24个字。与并冈山道路连在一起的井冈山精神是引导中国革命走向胜利的宝贵精神。</p>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>

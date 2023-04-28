@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>文本框相加</title>
+	<meta charset="utf-8">
+	<script type="text/javascript">
+		function add() {
+			var num1 = parseFloat(document.getElementById("num1").value);
+			var num2 = parseFloat(document.getElementById("num2").value);
+			var result = num1 + num2;
+			document.getElementById("result").value = result;
+		}
+	</script>
+</head>
+<body>
+	<input type="text" id="num1" placeholder="请输入第一个数">
+    +
+	<input type="text" id="num2" placeholder="请输入第二个数">
+	<button onclick="add()">=</button>
+	<input type="text" id="result" placeholder="结果" readonly>
+</body>
+</html>

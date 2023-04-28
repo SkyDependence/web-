@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>四则运算</title>
+    <script>
+        function calculate() {
+            var num1 = parseFloat(document.getElementById('num1').value);
+            var num2 = parseFloat(document.getElementById('num2').value);
+            var operator = document.getElementById('operator').value;
+            var result = 0;
+            if (operator == '+') {
+                result = num1 + num2;
+            } else if (operator == '-') {
+                result = num1 - num2;
+            } else if (operator == '*') {
+                result = num1 * num2;
+            } else if (operator == '/') {
+                result = num1 / num2;
+            }
+            document.getElementById('result').value = result;
+        }
+    </script>
+
+</head>
+
+<body>
+    <input type="text" id="num1" placeholder="请输入第一个数字">
+    <select id="operator">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+    </select>
+    <input type="text" id="num2" placeholder="请输入第二个数字">
+    <button onclick="calculate()">=</button>
+    <input type="text" id="result" placeholder="计算结果" disabled>
+</body>
+
+</html>
